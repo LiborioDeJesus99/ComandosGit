@@ -1,0 +1,113 @@
+
+ssh-keygen -t rsa -b 4096 -C "martin.jose.06@hotmail.com" 
+
+cd  ~/.ssh
+
+cat id_rsa.pub
+
+ssh -T git@github.com
+
+vim ~/.ssh/config
+
+Host github.com
+  Hostname ssh.github.com
+    Port 443
+esc
+
+:wq
+
+ssh -T git@github.com
+
+hacemos la llave y luego conectamos con git init y despues con el git remote conectamos a github
+
+
+git config --global user.name “Martin Zuleta”
+
+git config --global user.email “martin.jose.06@hotmail.com”
+
+git config --global color.ui true
+
+git config --global --list	
+
+borrar= clear.
+
+entrar en carpeta: cd "Nombre de la carpeta" (Sin comilas)
+
+expandir carpeta : dir o ls
+
+regresar carpeta : cd ..
+
+Iniciar proyecto: git init
+
+estado del proyecto: git status
+
+agregar carpeta : git add "Nombre de la carpeta" (Sin comilas)
+
+agregar todo: git add -A
+
+agregar comentario: git commit -m ""
+
+ver la lista de los commit : git log 
+
+volver a los commits :  git checkout + "codigo del commit" (Sin comilas)
+
+no toca el working area: git reset --soft + "Codigo del commit" (Sin comilas)
+
+borra todo: git reset --hard
+
+generar un txt con todos los commits:  git log > commits.txt
+
+head:  es el commit donde nos encontramos actualmente.
+
+rama: es una linea de tiempo en nuestro proyecto, que sirve para arreglar errores
+experimentar y hacer grandes cambios.
+
+rama master:  se genera cuando hacemos el git init, es donde comenzamos a trabajar y establece
+nuestro proyecto.
+
+git branch : mostrar las ramas.
+
+crear una rama: git branch "Nombre de la rama a crear" (Sin comilas)
+
+moverse y crear una rama: git checkout -b "Nombre de la rama" (Sin comilas)
+
+borrar las ramas: git branch -D
+
+mover de rama: git checkout "Nombre de la rama" (Sin comilas)
+
+fusiones: es la creacion de un commit juntandolo en una rama con otra.
+
+fusionar las ramas: git merge "nombre de la rama que va a ser absorvida" (Sin comilas)
+ 
+fast-fordwar     
+no pregunta hace la fusion 
+
+manual merge 
+tenemos los cambios pero antes tiene que pasar por nosotros,ocurre cuando se trabaja en los
+mismos archivos o lineas de codigos 
+
+moverse al escritorio: git desktop
+
+clonar un proyecto: git clone 
+
+git remote vincula el remoto con el local 
+
+git remote add origin (url)
+
+probarlo : git remote -v 
+
+para borrarlo: git remote remove origin
+
+mandar los cambios o commits a github : git push
+
+git push origin master
+
+git fetch origin
+
+git pull
+
+git branch -a
+
+git merge origin/master
+
+ls
