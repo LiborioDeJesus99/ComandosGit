@@ -1,5 +1,5 @@
 
-ssh-keygen -t rsa -b 4096 -C "martin.jose.06@hotmail.com" 
+ssh-keygen -t rsa -b 4096 -C "libodjyj@gmail.com" 
 
 cd  ~/.ssh
 
@@ -21,9 +21,9 @@ ssh -T git@github.com
 hacemos la llave y luego conectamos con git init y despues con el git remote conectamos a github
 
 
-git config --global user.name ìMartin Zuletaî
+git config --global user.name ‚ÄúLiborio‚Äù
 
-git config --global user.email ìmartin.jose.06@hotmail.comî
+git config --global user.email ‚Äúlibodjyj@gmail.com‚Äù
 
 git config --global color.ui true
 
