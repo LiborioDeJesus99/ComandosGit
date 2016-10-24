@@ -1,3 +1,8 @@
+git config --global user.name “Liborio”
+
+git config --global user.email “libodjyj@gmail.com”
+
+git config --global --list	
 
 ssh-keygen -t rsa -b 4096 -C "libodjyj@gmail.com" 
 
@@ -21,13 +26,7 @@ ssh -T git@github.com
 hacemos la llave y luego conectamos con git init y despues con el git remote conectamos a github
 
 
-git config --global user.name “Liborio”
 
-git config --global user.email “libodjyj@gmail.com”
-
-git config --global color.ui true
-
-git config --global --list	
 
 borrar= clear.
 
